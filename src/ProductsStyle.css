@@ -1,0 +1,5 @@
+.productBG{
+    background-image: url(./assets/productbg.jpg);
+    overflow:auto;
+    background-size: cover;
+}
