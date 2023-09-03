@@ -8,7 +8,7 @@ export const CartItem = (props) => {
 
   return (
     <div className="cartItem">
-      <img src={productImage} alt="product image" />
+      <img src={productImage} alt="product_img" />
       <div className="description">
         <p>
           <b>{productName}</b>
