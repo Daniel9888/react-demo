@@ -87,11 +87,12 @@
 
 
 
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1280px){
     .information{
         padding: 2rem;
         text-align: center;
-        background-image: linear-gradient(to right, #fff, gray);
+        background-image: url(./assets/inforbg.jpg);
+        color: #fff;
     }
     
     .box1{
@@ -130,8 +131,6 @@
     .information2{
         padding: 2rem;
         text-align: center;
-        background-image: linear-gradient(to left, #fff, gray);
-        box-shadow: 0px 15px 20px 10px;
     }
     
     .box2{
@@ -146,7 +145,6 @@
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
         transform: translateX(60px);
-
     
     }
     
@@ -172,7 +170,8 @@
     .information{
         padding: 2rem;
         text-align: center;
-        background-image: linear-gradient(to right, #fff, gray);
+        background-image: url(./assets/inforbg.jpg);
+        color: #fff;
     }
     
     .box1{
@@ -211,7 +210,6 @@
     .information2{
         padding: 2rem;
         text-align: center;
-        background-image: linear-gradient(to left, #fff, gray);
         box-shadow: 0px 15px 20px 10px;
     }
     
@@ -254,7 +252,8 @@
     .information{
         padding: 2rem;
         text-align: center;
-        background-image: linear-gradient(to right, #fff, gray);
+        background-image: url(./assets/inforbg.jpg);
+        color: #fff;
     }
     
     .box1{
@@ -281,7 +280,6 @@
     }
     
     .nylon-text{
-
         font-size: 25px;
         max-width: 500px;
         transform: translateX(100px);
@@ -293,8 +291,6 @@
     .information2{
         padding: 2rem;
         text-align: center;
-        background-image: linear-gradient(to left, #fff, gray);
-        box-shadow: 0px 15px 20px 10px;
     }
     
     .box2{
@@ -335,10 +331,21 @@
 
 @media only screen and (max-width: 576px){
 
+    .infopage{
+        background-image: url(./assets/inforbg.jpg);
+        color: #fff;
+    }
+
+    .information{
+        padding: 2rem;
+        text-align: center;
+
+    }
+
     .box1{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-between;     
     }
     
     #nylon1{
@@ -369,8 +376,6 @@
     .information2{
         padding: 2rem;
         text-align: center;
-        background-image: linear-gradient(to left, #fff, gray);
-        box-shadow: 0px 15px 20px 10px;
     }
     
     .box2{
@@ -402,5 +407,84 @@
         text-shadow: #fff 2px 8px 20px;
         text-align: center;
         padding-top: 20px;
+    }
+
+    @media only screen and (max-width: 414px){
+        .infopage{
+            background-image: url(./assets/inforbg.jpg);
+            color: #fff;
+        }
+    
+        .information{
+            padding: 2rem;
+            text-align: center;
+    
+        }
+    
+        .box1{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;     
+        }
+        
+        #nylon1{
+            width: 250px;
+            height: 250px;
+            border-radius: 20px;
+            transform: translateX(-4.4rem);
+        }
+        
+        #nylon2{
+            width: 250px;
+            height: 250px;
+            border-radius: 20px;
+            transform: translateX(-0.1rem);
+        }
+        
+        .nylon-text{
+    
+            font-size: 20px;
+            max-width: 400px;
+            transform: translateX(0.5rem);
+            text-shadow: #fff 2px 8px 20px;
+            text-align: center;
+            padding-top: 20px;
+        }
+        
+        .information2{
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .box2{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        #environment1{
+            width: 250px;
+            height: 250px;
+            border-radius: 20px;
+            transform: translateX(0.5rem);
+    
+        
+        }
+        
+        #environment2{
+            width: 250px;
+            height: 250px;
+            border-radius: 20px;
+            transform: translateX(3.5rem);
+        }
+        
+        .environment-text{
+            font-size: 20px;
+            max-width: 400px;
+            transform: translateX(1rem);
+            text-shadow: #fff 2px 8px 20px;
+            text-align: center;
+            padding-top: 20px;
+        }
     }
 }
