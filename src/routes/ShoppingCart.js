@@ -5,10 +5,9 @@ import { CartItem } from "../components/Cart-item";
 import { useNavigate } from "react-router-dom";
 import { Navbar } from "../components/Navbar";
 import "../cart.css";
-import Footer from "../components/Footer";
 
 export const ShoppingCart = () => {
-  const { cartItems, getTotalCartAmount, checkout } = useContext(ShopContext);
+  const { cartItems, getTotalCartAmount } = useContext(ShopContext);
   const totalAmount = getTotalCartAmount();
 
   const navigate = useNavigate();
@@ -19,11 +18,16 @@ export const ShoppingCart = () => {
       <div>
       </div>
       <div className="cart">
-        {ProductData .map((product) => {
-          if (cartItems[product.id] !== 0) {
-            return <CartItem data={product} />;
+        {
+        ProductData .map(
+          (product) => {
+            if (cartItems[product.id] !== 0) {
+              return <CartItem data={product} />;
+            }
+            return;
           }
-        })}
+        )
+        }
       </div>
       <div className="btnBox">
       {totalAmount > 0 ? (

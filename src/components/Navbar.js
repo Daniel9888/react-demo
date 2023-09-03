@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../NavbarStyle.css";
 import {NavLink, useLocation} from "react-router-dom";
 import { CartCheck } from 'react-bootstrap-icons';
